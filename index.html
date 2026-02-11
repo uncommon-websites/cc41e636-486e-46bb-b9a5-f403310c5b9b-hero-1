@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muse case Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            rose: '#f43f5e',
+                            dark: '#1F2937',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for specific UI nuances */
+        .key-shortcut {
+            font-size: 10px;
+            line-height: 1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- Top Banner -->
+    <div class="bg-[#F2F4F7] text-[#344054] text-[13px] py-2.5 px-4 relative">
+        <div class="max-w-7xl mx-auto flex justify-center items-center text-center pr-8">
+            <p>Launching structured design systems for next-gen automotive experiences. <a href="#" class="underline decoration-gray-400 underline-offset-2 hover:text-gray-900">Read more.</a></p>
+        </div>
+        <button class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm">
+        <div class="max-w-[1340px] mx-auto px-6 py-5 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold tracking-tighter text-black">muse case</a>
+            </div>
+
+            <!-- Nav Links (Desktop) -->
+            <div class="hidden md:flex items-center gap-8 text-[14px] font-medium text-gray-500">
+                <div class="relative group cursor-pointer flex items-center gap-1 hover:text-gray-900">
+                    Products
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <a href="#" class="hover:text-gray-900">Pricing</a>
+                <a href="#" class="hover:text-gray-900">Benchmarks</a>
+                <a href="#" class="hover:text-gray-900">Blog</a>
+                <a href="#" class="hover:text-gray-900">Docs</a>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hidden md:flex items-center gap-3">
+                <button class="bg-[#344054] hover:bg-gray-800 text-white text-[11px] font-bold tracking-wide px-3 py-2 rounded flex items-center gap-2 transition-colors">
+                    CONTACT <span class="bg-white/20 text-white/90 key-shortcut">C</span>
+                </button>
+                <button class="bg-[#f43f5e] hover:bg-[#e11d48] text-white text-[11px] font-bold tracking-wide px-3 py-2 rounded flex items-center gap-2 transition-colors">
+                    LOG IN / SIGN UP <span class="bg-white/20 text-white/90 key-shortcut">P</span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Button (Placeholder) -->
+            <div class="md:hidden">
+                <button class="text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="max-w-[1340px] mx-auto px-6 mt-16 md:mt-24 mb-20">
+        
+        <!-- Hero Text -->
+        <div class="mb-12">
+            <h1 class="text-[40px] md:text-[56px] leading-[1.1] font-semibold tracking-tight text-gray-900">
+                Cohesive digital systems for automotive brands
+            </h1>
+            <h2 class="text-[40px] md:text-[56px] leading-[1.1] font-semibold tracking-tight text-gray-400 mt-1">
+                Structured user journeys powered by <span class="text-[#f43f5e]">systematic design</span>
+            </h2>
+
+            <button class="mt-10 group inline-flex items-center gap-3 px-4 py-2.5 border border-gray-200 rounded-md text-[11px] font-mono tracking-wider text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all uppercase">
+                Explore Systems 
+                <span class="bg-gray-100 border border-gray-200 text-gray-500 key-shortcut group-hover:bg-white">S</span>
+            </button>
+        </div>
+
+        <!-- Hero Image Container -->
+        <div class="relative w-full rounded-xl overflow-hidden shadow-sm">
+            <!-- Background Image Placeholder (Simulating the Blue Matrix) -->
+            <img src="https://placehold.co/1300x650/f43f5e/ffffff?text= " alt="Rose Matrix Background" class="w-full h-auto object-cover min-h-[400px]">
+            
+            <!-- Overlay Elements to mimic the UI in the screenshot -->
+            
+            <!-- Center Floating Badge -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-md border border-white/40 shadow-lg rounded-full px-5 py-2.5 flex items-center gap-3 z-10">
+                <span class="font-mono text-xs text-gray-800 tracking-tight">Systematic Design for Automotive</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-gray-700">
+                    <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
+                </svg>
+            </div>
+
+            <!-- Bottom Toggle Control -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 bg-[#1D2939] p-1 rounded-full flex items-center z-10 shadow-xl">
+                <div class="flex items-center gap-2 bg-white/10 rounded-full px-3 py-1 cursor-pointer">
+                    <div class="w-2 h-2 rounded-full bg-white border-2 border-white"></div>
+                    <span class="text-[10px] font-bold text-white tracking-wide">HUMAN</span>
+                </div>
+                <div class="flex items-center gap-2 px-3 py-1 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
+                    <div class="w-2 h-2 rounded-full border border-gray-400"></div>
+                    <span class="text-[10px] font-bold text-white tracking-wide">MACHINE</span>
+                </div>
+            </div>
+
+            <!-- Decorative overlay to simulate the blue tint/gradient better over the placeholder -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#fb7185]/30 to-[#f43f5e]/40 pointer-events-none mix-blend-multiply"></div>
+        </div>
+
+    </main>
+
+</body>
+</html>
